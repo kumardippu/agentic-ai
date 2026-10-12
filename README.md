@@ -182,6 +182,10 @@ agentic-ai/
 
 Note that `sample_docs/` and `faiss_index/` exist twice, once for the notebooks and once for the app. They are separate copies. If you edit one, the other does not change.
 
+<img width="1880" height="1026" alt="image" src="https://github.com/user-attachments/assets/aaca4ceb-7880-44cf-9c95-760621f7912b" />
+<img width="1884" height="1007" alt="image" src="https://github.com/user-attachments/assets/1a733973-355e-43fc-8134-4803832a38ac" />
+
+
 ## Troubleshooting
 
 | Symptom | Cause and fix |
