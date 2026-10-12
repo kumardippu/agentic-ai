@@ -1,0 +1,39 @@
+LangChain is a framework for developing applications powered by large language models ( LLMs).
+
+LangChain simplifies every stage of the LLM application lifecycle:
+
+- **Development**: Build your applications using LangChain’s opne-source components and 3rd party integrations. Use LangGraph to build stateful agents with 1st class streaming and human-in-the-loop support.
+
+- **Productionization: Use LangSmith to inspect, monitor and evaluate your applications, so that you can continuously optimize and deploy with confidence.**
+
+- **Deployment: Turn your LangGraph apps into production0-ready APIs and Assistants with LangGraph platform**
+
+- 
+
+- **Overview : Agent = Model + Harness.** LangChain provides `create_agent`: a minimal, highly configurable harness. The harness is everything around the model loop: the prompt, the tools, and any middleware that shapes behavior. Start with the primitives and compose exactly what your use case needs. Supports OpenAI, Anthropic, Google, and more.
+
+LLMs (Large Language Models) have a specific training cutoff date, meaning they cannot access real-time data or recent news on their own. By giving an LLM access to Tools (like web search, Wikipedia, or custom calculators), it can dynamically fetch external information, read the response as context, and provide an accurate, up-to-date answer (similar to how Perplexity AI works).
+
+AWSTemplateFormatVersion: "2010-09-09"
+
+### 1. Custom Tools (Using `@tool` Decorator)
+
+You can easily build custom tools for specific tasks using standard Python functions.
+
+
+- **The Decorator:** Use the `@tool` decorator from `langchain_core.tools`.
+
+- **Docstrings and Type Hints:** These are crucial. The LLM reads the function's docstring to understand *when and why* to use the tool, and it reads the type hints (e.g., `a: int`) to know *which parameters* to extract from the user's prompt.
+
+- **Structured Tools:** For more complex configurations (like supporting both synchronous and asynchronous execution), you can use `StructuredTool.from_function()`.
+
+### 2. Inbuilt Tools
+
+LangChain provides many ready-to-use tools that can be imported directly. Examples covered in the video include:
+
+
+- **Wikipedia Search:** Uses `WikipediaQueryRun` and `WikipediaAPIWrapper` to fetch article summaries directly from Wikipedia.
+
+- **Tavily Search:** A search engine optimized for AI agents to browse the web for real-time data (requires an API key).
+
+- **Arxiv Search:** Connects to the Arxiv API to search for and retrieve academic research papers using keywords or paper IDs.

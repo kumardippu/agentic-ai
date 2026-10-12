@@ -1,0 +1,9 @@
+langchain
+langgraph
+load_dotenv
+langchain-groq
+langchain-openai
+streamlit
+wikipedia
+# for langraph
+langchain-google-genai
