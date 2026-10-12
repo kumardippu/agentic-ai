@@ -184,6 +184,7 @@ Note that `sample_docs/` and `faiss_index/` exist twice, once for the notebooks 
 
 <img width="1880" height="1026" alt="image" src="https://github.com/user-attachments/assets/aaca4ceb-7880-44cf-9c95-760621f7912b" />
 <img width="1884" height="1007" alt="image" src="https://github.com/user-attachments/assets/1a733973-355e-43fc-8134-4803832a38ac" />
+<img width="1905" height="1023" alt="image" src="https://github.com/user-attachments/assets/a2cd5446-1d85-4029-b952-9ddf49381be2" />
 
 
 ## Troubleshooting
